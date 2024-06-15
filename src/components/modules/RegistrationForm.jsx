@@ -1,12 +1,8 @@
-// RegistrationForm.js
-
 import React, { useState } from 'react';
-import axios from 'axios'; // for making HTTP requests
+import axios from 'axios';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
 
-const Registration = () => {
-    const navigate  = useNavigate();
+const RegistrationForm = () => {
   const [role, setRole] = useState('employee'); // default role
 
   const [formData, setFormData] = useState({
@@ -32,14 +28,11 @@ const Registration = () => {
         formData
       );
       console.log('Registration successful:', response.data);
-      
       // You can redirect or show a success message here
     } catch (error) {
       console.error('Registration error:', error.response.data);
       // Handle error state or show error message
     }
-
-    navigate('/about')
   };
 
   return (
@@ -103,4 +96,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default RegistrationForm;

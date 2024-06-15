@@ -1,34 +1,34 @@
-chat gpt generate an register component using bootstrap in which at the top two option are there employee and recruiter if i choose recruiter and rigester it goes on different panel and if i choose on employee it goes on different panel and both of there data is storedd in different difeerent table in mango db create it using apis
+// chat gpt generate an register component using bootstrap in which at the top two option are there employee and recruiter if i choose recruiter and rigester it goes on different panel and if i choose on employee it goes on different panel and both of there data is storedd in different difeerent table in mango db create it using apis
 
-ChatGPT
-ChatGPT
-Creating a registration component using Bootstrap where users can choose between registering as an employee or recruiter, and their data is stored in different MongoDB collections, involves several steps. Below, I'll outline the basic structure and steps needed to achieve this:
+// ChatGPT
+// ChatGPT
+// Creating a registration component using Bootstrap where users can choose between registering as an employee or recruiter, and their data is stored in different MongoDB collections, involves several steps. Below, I'll outline the basic structure and steps needed to achieve this:
 
-Frontend (using Bootstrap and React for example)
-Component Structure:
+// Frontend (using Bootstrap and React for example)
+// Component Structure:
 
-Use Bootstrap for styling and layout.
-Implement two panels or forms: one for employee registration and one for recruiter registration.
-Include radio buttons or a dropdown at the top to let users select their role.
-Form Handling:
+// Use Bootstrap for styling and layout.
+// Implement two panels or forms: one for employee registration and one for recruiter registration.
+// Include radio buttons or a dropdown at the top to let users select their role.
+// Form Handling:
 
-Handle state to determine which form (employee or recruiter) is displayed based on user selection.
-Capture user input (name, email, password, etc.) for each role separately.
-API Integration:
+// Handle state to determine which form (employee or recruiter) is displayed based on user selection.
+// Capture user input (name, email, password, etc.) for each role separately.
+// API Integration:
 
-Use Axios or Fetch API to make HTTP requests to your backend (Node.js/Express) server.
-Define endpoints for handling employee and recruiter registrations.
-Backend (using Node.js, Express, and MongoDB)
-Server Setup:
+// Use Axios or Fetch API to make HTTP requests to your backend (Node.js/Express) server.
+// Define endpoints for handling employee and recruiter registrations.
+// Backend (using Node.js, Express, and MongoDB)
+// Server Setup:
 
-Set up an Express server to handle HTTP requests.
-Connect to MongoDB using Mongoose for data modeling.
-Database Schema:
+// Set up an Express server to handle HTTP requests.
+// Connect to MongoDB using Mongoose for data modeling.
+// Database Schema:
 
-Define Mongoose schemas for employee and recruiter data.
-Example schemas:
-javascript
-Copy code
+// Define Mongoose schemas for employee and recruiter data.
+// Example schemas:
+// javascript
+// Copy code
 const mongoose = require('mongoose');
 
 const employeeSchema = new mongoose.Schema({

@@ -5,7 +5,7 @@ import 'animate.css/animate.min.css'; //
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-const About = () => {
+const AboutUs = () => {
   return (
     <div className="about-section">
       <Container>
@@ -46,4 +46,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUs;
