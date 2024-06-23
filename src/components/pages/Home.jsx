@@ -1,10 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "animate.css/animate.min.css"; // Import Animate.css for animations
+// import "./Home.css"; // Import custom CSS
 
 const Home = () => {
   return (
-    <div className="hero-container">
+    <div className="hero-container fade-in">
       {/* Hero Carousel */}
       <div
         id="heroCarousel"
@@ -51,7 +52,7 @@ const Home = () => {
                 that fits you
               </p>
               <button
-                className="btn btn-primary"
+                className="btn btn-custom"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDescription"
                 aria-controls="offcanvasDescription"
@@ -74,7 +75,7 @@ const Home = () => {
                 <span className="highlight">tech startups</span>
               </p>
               <button
-                className="btn btn-primary"
+                className="btn btn-custom"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDescription"
                 aria-controls="offcanvasDescription"
@@ -97,7 +98,7 @@ const Home = () => {
                 <span className="highlight">accelerate your career</span>
               </p>
               <button
-                className="btn btn-primary"
+                className="btn btn-custom"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDescription"
                 aria-controls="offcanvasDescription"
@@ -136,7 +137,7 @@ const Home = () => {
 
       {/* Offcanvas Description */}
       <div
-        className="offcanvas offcanvas-bottom"
+        className="offcanvas offcanvas-start"
         tabIndex="-1"
         id="offcanvasDescription"
         aria-labelledby="offcanvasDescriptionLabel"

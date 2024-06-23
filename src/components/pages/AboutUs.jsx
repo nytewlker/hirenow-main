@@ -1,13 +1,13 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'animate.css/animate.min.css'; // 
+import 'animate.css/animate.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-
+// import './AboutUs.css';  // Assuming you create this CSS file
 
 const AboutUs = () => {
   return (
-    <div className="about-section">
+    <div className="about-section fade-in">
       <Container>
         <Row className="justify-content-center">
           <Col md={8}>
@@ -24,21 +24,55 @@ const AboutUs = () => {
         <Row className="justify-content-center mt-5">
           <Col md={4} className="text-center animate__animated animate__fadeInLeft">
             <img
-              src="https://via.placeholder.com/200"
+              src={`${process.env.PUBLIC_URL}/assets/owner.jpg`}
               alt="Team Member 1"
               className="img-fluid rounded-circle mb-4"
             />
-            <h4>John Doe</h4>
+            <h4>Anand Dubey</h4>
+            <h6>(ADDIE)</h6>
             <p>CEO & Founder</p>
           </Col>
           <Col md={4} className="text-center animate__animated animate__fadeInRight">
-            <img
-              src="https://via.placeholder.com/200"
-              alt="Team Member 2"
+          <img
+              src={`${process.env.PUBLIC_URL}/assets/owner.jpg`}
+              alt="Team Member 1"
               className="img-fluid rounded-circle mb-4"
             />
-            <h4>Jane Smith</h4>
+            <h4>Anand Dubey</h4>
+            <h6>(ADDIE)</h6>
             <p>Chief Designer</p>
+          </Col>
+        </Row>
+        <Row className="justify-content-center mt-5">
+          <Col md={4} className="text-center animate__animated animate__fadeInLeft">
+          <img
+              src={`${process.env.PUBLIC_URL}/assets/owner.jpg`}
+              alt="Team Member 1"
+              className="img-fluid rounded-circle mb-4"
+            />
+            <h4>Anand Dubey</h4>
+            <h6>(ADDIE)</h6>
+            <p>Project Manager</p>
+          </Col>
+          <Col md={4} className="text-center animate__animated animate__fadeInRight">
+          <img
+              src={`${process.env.PUBLIC_URL}/assets/owner.jpg`}
+              alt="Team Member 1"
+              className="img-fluid rounded-circle mb-4"
+            />
+            <h4>Anand Dubey</h4>
+            <h6>(ADDIE)</h6>
+            <p>Lead Developer</p>
+          </Col>
+          <Col md={4} className="text-center animate__animated animate__fadeInRight">
+          <img
+              src={`${process.env.PUBLIC_URL}/assets/owner.jpg`}
+              alt="Team Member 1"
+              className="img-fluid rounded-circle mb-4"
+            />
+            <h4>Anand Dubey</h4>
+            <h6>(ADDIE)</h6>
+            <p>Marketing Head</p>
           </Col>
         </Row>
       </Container>
