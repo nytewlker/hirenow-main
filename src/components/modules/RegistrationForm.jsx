@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import React, { useState } from "react";
+import axios from "axios";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { APIBASEURL } from "../../config";
 
 const RegistrationForm = () => {
-  const [role, setRole] = useState('employee'); // default role
+  const [role, setRole] = useState("employee"); // default role
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
+    name: "",
+    email: "",
+    password: "",
+    company: "test"
   });
 
   const handleRoleChange = (event) => {
@@ -24,13 +26,13 @@ const RegistrationForm = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        `/api/${role}/register`, // endpoint based on selected role
+        `${APIBASEURL}/${role}/register`,
         formData
       );
-      console.log('Registration successful:', response.data);
+      console.log("Registration successful:", response.data);
       // You can redirect or show a success message here
     } catch (error) {
-      console.error('Registration error:', error.response.data);
+      console.error("Registration error:", error);
       // Handle error state or show error message
     }
   };

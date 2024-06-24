@@ -11,9 +11,9 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light custom-nav-container">
+    <nav className="navbar navbar-expand-lg custom-nav-container">
       <Link to="/" className="navbar-brand">
-        Cafeesa
+        <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="CareerVista" />
       </Link>
       <button
         className="navbar-toggler"
@@ -45,7 +45,7 @@ const Header = () => {
           </li>
           <NavDropdown
             id="nav-dropdown-dark-example"
-            title="Dropdown"
+            title="Join US"
             menuVariant="dark"
           >
             <NavDropdown.Item as={Link} to="/RecruiterLoginForm">

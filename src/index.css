@@ -1,4 +1,59 @@
-/* Custom styles for the Home component */
+/* Navigation.css */
+
+.custom-nav-container {
+  background-color: #184d47; /* Set your desired background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+  padding: 10px 20px;
+}
+
+.navbar-brand img {
+  height: 40px; /* Adjust the height of the logo */
+  width: auto;
+}
+
+.navbar-toggler {
+  border: none; /* Remove border for the hamburger button */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.nav-link {
+  color: #ffffff !important; /* Set your desired text color */
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+  color: #ff6347 !important; /* Change color on hover */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px; /* Add some spacing between nav items */
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #184d47; /* Dark background for the dropdown */
+}
+
+.navbar-nav .dropdown-item {
+  color: #ffffff !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #ff6347; /* Change background color on hover */
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    background-color: #5c4d4d; /* Background color for mobile view */
+    padding: 20px;
+  }
+}
+
+
 /* Custom styles for the Home component */
 .hero-container {
   position: relative;
